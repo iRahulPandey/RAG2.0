@@ -1,0 +1,45 @@
+# Secrets
+.env
+.env.*.local
+
+# uv / Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_meta
+
+# Personal working files (not for the public repo)
+rag_showdown_youtube_script.md
+
+# Generated notebook artifacts (article.pdf stays; workdir is regenerable)
+workdir/
+
+# ChromaDB persistent stores (in case EphemeralClient is swapped later)
+.chroma/
+chroma_db/
+
+# HuggingFace / sentence-transformers model cache if the user points HF_HOME here
+.hf_cache/
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+.remember/
+.claude/
+
+# Knowledge-Base vault: commit the skeleton + seeded sources, ignore LLM-generated content
+Knowledge-Base/Raw/article.md
+Knowledge-Base/Sources/*.md
+Knowledge-Base/Wiki/*.md
+Knowledge-Base/System/*.md
+Knowledge-Base/Archive/*.md

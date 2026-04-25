@@ -1,0 +1,18 @@
+[project]
+name = "rag2-0"
+version = "0.1.0"
+description = "RAG showdown notebook — Vector RAG (ChromaDB) vs Vectorless (PageIndex) vs Self-writing wiki, scored head-to-head on the same PDF with Claude as judge."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.96.0",
+    "chromadb>=1.5.8",
+    "docling>=2.90.0",
+    "ipykernel>=7.2.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.8",
+    "pageindex>=0.2.8",
+    "pandas>=3.0.2",
+    "python-dotenv>=1.2.2",
+    "sentence-transformers>=5.4.1",
+]
